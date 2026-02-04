@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Snake</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="app">
+      <h1>Snake</h1>
+      <section class="hud" aria-live="polite">
+        <p>Score: <strong data-score>0</strong></p>
+        <p>Status: <strong data-status>Running</strong></p>
+      </section>
+
+      <canvas data-game-canvas aria-label="Snake game board" role="img"></canvas>
+
+      <section class="actions">
+        <button type="button" data-pause>Pause</button>
+        <button type="button" data-restart>Restart</button>
+      </section>
+
+      <section class="controls" aria-label="On-screen controls">
+        <button type="button" data-direction="up">Up</button>
+        <div class="controls-row">
+          <button type="button" data-direction="left">Left</button>
+          <button type="button" data-direction="down">Down</button>
+          <button type="button" data-direction="right">Right</button>
+        </div>
+      </section>
+
+      <p class="hint">Use Arrow Keys or WASD. Press Space / P to pause.</p>
+    </main>
+
+    <script type="module" src="./src/game.js"></script>
+  </body>
+</html>
