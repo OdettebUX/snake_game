@@ -33,3 +33,39 @@ EN: Classic Snake game built with vanilla HTML, CSS, and JavaScript.
 
 ```bash
 npm start
+```
+
+Abrir en el navegador / Open in browser:
+
+- `http://localhost:5173`
+
+## Tests
+
+```bash
+npm test
+```
+
+## Controles / Controls
+
+- ES: Mover: flechas o `W`, `A`, `S`, `D`
+  EN: Move: arrow keys or `W`, `A`, `S`, `D`
+- ES: Empezar: `Enter` o botón `Start`
+  EN: Start: `Enter` or `Start` button
+- ES: Pausa: `Espacio` o `P`
+  EN: Pause: `Space` or `P`
+- ES: Reiniciar: botón `Restart`
+  EN: Restart: `Restart` button
+
+## Ajustes del juego / Game settings
+
+- `Difficulty`: ES: cambia la velocidad base | EN: changes base game speed
+- `Wrap walls`: ES: atraviesa bordes | EN: go through one edge and appear on the opposite side
+- `Sound`: ES/EN: activa o desactiva / toggle audio effects
+
+## Estructura principal / Main structure
+
+- `index.html`: ES interfaz / EN UI
+- `styles.css`: ES/EN styles
+- `src/snake-core.js`: ES lógica principal / EN core logic
+- `src/game.js`: ES loop + render + controles + audio / EN game loop + render + controls + audio
+- `tests/snake-core.test.js`: ES/EN core logic tests
