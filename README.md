@@ -1,4 +1,7 @@
 # Snake Game
+## Jugar online
+Puedes jugar aquí: [Snake Game](https://odettebux.github.io/snake_game/)
+
 
 ES: Juego clásico de Snake hecho con HTML, CSS y JavaScript vanilla.
 EN: Classic Snake game built with vanilla HTML, CSS, and JavaScript.
