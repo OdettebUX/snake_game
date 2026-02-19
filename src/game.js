@@ -80,21 +80,18 @@ function renderGrid() {
   ctx.strokeStyle = '#1f2a30';
   ctx.lineWidth = 1;
 
+  ctx.beginPath();
   for (let x = 0; x <= GRID_SIZE; x += 1) {
     const px = x * CELL_SIZE + 0.5;
-    ctx.beginPath();
     ctx.moveTo(px, 0);
     ctx.lineTo(px, canvas.height);
-    ctx.stroke();
   }
-
   for (let y = 0; y <= GRID_SIZE; y += 1) {
     const py = y * CELL_SIZE + 0.5;
-    ctx.beginPath();
     ctx.moveTo(0, py);
     ctx.lineTo(canvas.width, py);
-    ctx.stroke();
   }
+  ctx.stroke();
 }
 
 function render() {
